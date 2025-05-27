@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>डीपसीक V3 हिंदी को निःशुल्क आज़माएँ - उन्नत एआई के साथ चैट करें</title>
+    <meta name="description" content="डीपसीक V3 की क्षमताओं को निःशुल्क देखें। उन्नत एआई वार्तालापों में शामिल हों, टेक्स्ट उत्पन्न करें, छवियों का विश्लेषण करें और एआई-संचालित ड्राइंग का अनुभव करें।">
+    <link rel="canonical" href="https_YOUR_DOMAIN_COM/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/制作图标.png">
+    <link rel="alternate" hreflang="hi" href="http://www.erohmed.com"/>
+</head>
+<body>
+    <div id="vanta-bg"></div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>डीपसीक V3</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="login.html" class="nav-auth-link">लॉगिन/रजिस्टर</a>
+                <a href="index.html" class="active">चैट इंटरफ़ेस</a>
+                <a href="feedback.html">उपयोगकर्ता प्रतिक्रिया</a>
+            </nav>
+            <div class="chat-history">
+                <h3>चैट इतिहास</h3>
+                <ul id="history-list">
+                    <!-- 历史对话将通过JS动态添加 -->
+                    <li><a href="#">चैट 1 - V3 मॉडल सुविधाएँ</a></li>
+                    <li><a href="#">चैट 2 - संगीत रिदम गेम</a></li>
+                </ul>
+            </div>
+            <button class="new-chat-btn" id="newChatBtnSidebar">नई चैट</button>
+        </aside>
+
+        <main class="chat-interface">
+            <div class="content-wrapper">
+                <header class="chat-header">
+                    <h1>डीपसीक V3 हिंदी संस्करण का निःशुल्क परीक्षण</h1>
+                    <p>मैं आपकी कोड लिखने, फाइलें पढ़ने, विभिन्न सामग्री बनाने में मदद कर सकता हूँ, बस मुझे अपने कार्य बताएं!</p>
+                </header>
+
+                <div class="message-area" id="messageArea">
+                    <!-- 对话消息将显示在这里 -->
+                </div>
+                <div id="image-aspect-ratio-selector" class="image-aspect-ratio-selector" style="display: none;">
+                    <h4>पहलू अनुपात चुनें:</h4>
+                    <button class="aspect-ratio-btn" data-ratio="1:1">1:1</button>
+                    <button class="aspect-ratio-btn" data-ratio="3:4">3:4</button>
+                    <button class="aspect-ratio-btn" data-ratio="4:3">4:3</button>
+                    <button class="aspect-ratio-btn" data-ratio="9:16">9:16</button>
+                    <button class="aspect-ratio-btn" data-ratio="16:9">16:9</button>
+                </div>
+                <div class="chat-input-area">
+                    <button id="uploadImageBtn" class="upload-btn" aria-label="छवि अपलोड करें">📎</button>
+                    <div id="imagePreviewContainer" class="image-preview-container">
+                        <!-- 上传的图片预览将显示在这里 -->
+                    </div>
+                    <textarea id="chatInput" placeholder="डीपसीक को एक संदेश भेजें"></textarea>
+                    <button id="sendMessageBtn" class="send-btn" aria-label="संदेश भेजें">⬆️</button>
+                </div>
+
+                <div class="use-cases">
+                    <button class="use-case-btn" data-case="general">
+                        <img src="images/通用对话.png" alt="सामान्य चैट आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">सामान्य चैट</span>
+                        <span class="use-case-description">प्रश्नों के उत्तर दें, जानकारी प्रदान करें</span>
+                    </button>
+                    <button class="use-case-btn" data-case="education">
+                        <img src="images/教育辅导.png" alt="शिक्षा आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">शिक्षा</span>
+                        <span class="use-case-description">अवधारणाओं को समझाएं, सीखने में सहायता करें</span>
+                    </button>
+                    <button class="use-case-btn" data-case="translation">
+                        <img src="images/翻译助手.png" alt="अनुवाद आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">अनुवाद</span>
+                        <span class="use-case-description">बहु-भाषा अनुवाद</span>
+                    </button>
+                    <button class="use-case-btn" data-case="data_analysis">
+                        <img src="images/数据分析.png" alt="डेटा विश्लेषण आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">डेटा विश्लेषण</span>
+                        <span class="use-case-description">अंतर्दृष्टिपूर्ण डेटा, निर्णय समर्थन</span>
+                    </button>
+                    <button class="use-case-btn" data-case="screenwriting">
+                        <img src="images/影视剧本.png" alt="पटकथा लेखन आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">पटकथा लेखन</span>
+                        <span class="use-case-description">रचनात्मक विचार, स्क्रिप्ट लेखन</span>
+                    </button>
+                    <button class="use-case-btn" data-case="media_ops">
+                        <img src="images/媒体运营.png" alt="मीडिया संचालन आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">मीडिया संचालन</span>
+                        <span class="use-case-description">सामग्री योजना, विपणन</span>
+                    </button>
+                    <button class="use-case-btn" data-case="image_parsing">
+                        <img src="images/图像解析.png" alt="छवि पार्सिंग आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">छवि से प्रॉम्प्ट</span>
+                        <span class="use-case-description">छवियों को समझें, जानकारी निकालें</span>
+                    </button>
+                    <button class="use-case-btn" data-case="ai_drawing">
+                        <img src="images/AI绘图.png" alt="एआई ड्राइंग आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">एआई ड्राइंग</span>
+                        <span class="use-case-description">टेक्स्ट से छवि, अंतहीन रचनात्मकता</span>
+                    </button>
+                    <button class="use-case-btn" data-case="image_to_image">
+                        <img src="images/以图生图.png" alt="छवि से छवि आइकन" class="use-case-icon-img">
+                        <span class="use-case-title">छवि से छवि</span>
+                        <span class="use-case-description">छवि पुनर्निर्माण, शैली हस्तांतरण</span>
+                    </button>
+                </div>
+                <div id="prompt-suggestions-area" class="prompt-suggestions">
+                    <!-- Prompt suggestions will be dynamically added here -->
+                </div>
+
+                <!-- New: Image Aspect Ratio Selector -->
+
+            </div>
+            <footer>
+                <p><a href="https://beian.miit.gov.cn" rel="nofollow">渝ICP备2023003099号</a> | हमसे संपर्क करें: <a href="mailto:ytsgabcde48@2925.com">ytsgabcde48@2925.com</a></p>
+                <hr class="footer-divider">
+                <p class="footer-ai-notice">एआई द्वारा उत्पन्न सामग्री, सटीकता की गारंटी नहीं दी जा सकती, केवल संदर्भ के लिए। <a href="privacy.html">व्यक्तिगत सूचना संरक्षण नियम</a></p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0xf7f7f7,
+            speedLimit: 3.00,
+
+        })
+    </script>
+</body>
+</html> 
